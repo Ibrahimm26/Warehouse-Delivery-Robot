@@ -1,4 +1,4 @@
-Warehouse Delivery Robot — Intelligent Systems
+Warehouse Delivery Robot — Intelligent Programming
 
 📌 Project Overview
 
@@ -27,12 +27,12 @@ The warehouse contains different types of terrain, so finding the path with the 
 The warehouse is represented as a two-dimensional grid.
 
 Symbol| Meaning| Movement Cost
-"S"| Starting position| Not counted
-"G"| Goal position| 1
-"."| Normal floor| 1
-"~"| Rough floor| 3
-"#"| Wall / blocked cell| Impassable
-"*"| Cell included in the discovered path| Depends on the original cell
+"S" --> Starting position | Not counted
+"G" --> Goal position | 1
+"." --> Normal floor | 1
+"~" --> Rough floor | 3
+"#" --> Wall / blocked cell| Impassable
+"*" --> Cell included in the discovered path| Depends on the original cell
 
 The robot can move in four directions only:
 
@@ -52,12 +52,12 @@ UCS expands the node with the lowest accumulated path cost.
 It uses:
 
 [
-f(n)=g(n)
+f(n) = g(n)
 ]
 
-Where:
+Where :
 
-- (g(n)) is the total cost from the start to the current node.
+- ( g(n)) is the total cost from the start to the current node.
 
 Why UCS?
 
@@ -89,11 +89,11 @@ Where:
 
 Manhattan Distance is suitable because the robot moves only horizontally and vertically. Since every traversable move costs at least 1, this heuristic does not overestimate the remaining cost.
 
-Why A?*
+Why A* ?
 
 A* considers both the cost already paid and the estimated remaining cost. With this heuristic and the implemented search conditions, it can find an optimal-cost path while guiding the search toward the goal.
 
-⚖️ Why UCS and A*?
+⚖️ Why UCS and A* ?
 
 UCS and A* provide a useful comparison between uninformed and informed search.
 
@@ -179,4 +179,4 @@ The project highlights the importance of considering terrain costs rather than s
 
 Course: Intelligent Systems
 Project: Task 1 — Warehouse Delivery Robot
-Algorithms: Uniform Cost Search (UCS) and A* Search
+Algorithms: Uniform Cost Search ( UCS ) and A* Search
