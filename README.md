@@ -27,12 +27,12 @@ The warehouse contains different types of terrain, so finding the path with the 
 The warehouse is represented as a two-dimensional grid.
 
 Symbol| Meaning| Movement Cost
-"S" --> Starting position | Not counted
-"G" --> Goal position | 1
-"." --> Normal floor | 1
-"~" --> Rough floor | 3
-"#" --> Wall / blocked cell| Impassable
-"*" --> Cell included in the discovered path| Depends on the original cell
+"S" --> Starting position | Not counted ,
+"G" --> Goal position | 1 ,
+"." --> Normal floor | 1 ,
+"~" --> Rough floor | 3 ,
+"#" --> Wall / blocked cell | Impassable ,
+"*" --> Cell included in the discovered path | Depends on the original cell 
 
 The robot can move in four directions only:
 
